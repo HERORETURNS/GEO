@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>geo location: find where are you</title>
+  <meta charset="utf-8">
+  <meta name="Theme-color" content="#ff0000" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keyword" content="geo, location, find location, geolocation, geography">
+  <meta name="description" content="you can use yhis website to know where are you?">
+  <meta name="author" content="specter">
+  <link rel="stylesheet" href="Theme/css/font-awesome.css">
+  <link rel="stylesheet" href="Theme/css/style.css">
+</head>
+<body>
+
+  <!-- Bg animation Effect start -->
+  <div class="bg-animation-effect">
+  </div>
+  <!-- Bg animation Effect end -->
+
+  <!-- Overlay Effect Start -->
+  <div class="overlay-effect">
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+    <div class="overlay-effect-item"></div>
+  </div>
+  <!-- Overlay Effect End -->
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="row flex-end">
+        <button type="button" class="nav-toggler">
+          <span></span>
+        </button>
+        <!-- nav -->
+        <nav class="nav">
+          <div class="nav-inner">
+            <ul>
+              
+              <li><a href="mailto:play.vps45028@gmail.com" class="nav-item link-item">contact me</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+<!-- About Section Page -->
+  <section class="about-section active" id="about">
+    <div class="container">
+      <div class="row min-vh-100">
+        <div class="about-content">
+          <img src="Theme/img/profile-img.jpg" alt="portofilo-img">
+          <h1>Find your <span style="color: #ff0000">Geo Location</span></h1>
+          <script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- About Section End -->
+
+
+  
+
+<script src="Theme/js/script.js"></script>
+</body>
+</html>
